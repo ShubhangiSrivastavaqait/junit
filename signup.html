@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="/home/qainfotech/Documents/style1.css">
+</head>
+<body>
+ <div>
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<center><tr>
+<img src="img1.png" width="150" height="140" align="middle" border ="1"><br>
+<br/>   
+</tr><center>
+ 
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+
+<tr>
+<td align='center'> Name:</td>
+   <td><input type='text' name='name' placeholder='Name'></td>
+
+</tr>
+<tr> <td><br /></td> </tr>
+
+<tr>
+
+<td align='center'> Password:</td>
+  <td><input type='password' id='pass' name='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder='password' required>
+ </td></tr>
+
+<tr> <td><br /></td> </tr>
+<tr>
+<td align='center'> Confirm Password: </td>
+  <td><input type='password' id='cnfpass' name='password' placeholder='password' required>
+  </td></tr>
+
+<tr><td><br /></td></tr>
+<tr>
+<td align='center'>Date Of Birth:</td>
+   <td><input type='date' name='name' placeholder='Date of birth'></td>
+</tr>
+
+<tr> <td><br /></td></tr>
+<tr>
+<td align='center'>Address:</td>
+   <td><input type='text' name='address' placeholder="Address" ></td>
+</tr>
+
+<tr> <td><br/></td></tr>
+<tr>
+<td align='center'>Phone:</td>
+    <td><input type="tel" id="phone" name="phone"
+       pattern="[0-9]{15}" required><br/>
+
+<span class="note">Format:Input contact along with the country code </span>
+
+</tr>
+<tr><td><br/></td> </tr>
+<tr>
+    <td align='center'>Email:</td>
+    <td><input type='email' name='emailaddress' placeholder="Email"></td>
+</tr>
+
+<tr> <td><br/></td> </tr>
+
+<tr>
+    <td align='center'>Gender:</td>
+    <td><input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other</td>
+</tr>
+<tr> <td><br/></td> </tr>
+<tr>
+<td align='center'>Languages known:</td>
+    <td><input type="checkbox" name="language" value="Hindi">Hindi
+    <input type="checkbox" name="language" value="English">English 
+    <input type="checkbox" name="language" value="French">French</td>
+</tr>
+<tr> <td><br/></td> </tr>
+<tr>
+     <td align='center'>Select country:</td>
+     <td>
+     <select id = "myList">
+               <option value = "1">India</option>
+               <option value = "2">America</option>
+               <option value = "3">Nepal</option>
+               <option value = "4">China</option>
+     </select>
+     </td></tr>
+<tr> <td><br /></td> </tr>
+<tr>
+    <td>Click to upload a profile image:</td>
+    <td><input type="file" id="myFile">
+</td></tr>
+<tr> <td><br/></td> </tr>
+    <tr>
+    <table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+<br/>
+<tr>
+<td align='center'><button class="btn success">Sign-Up</button></td>
+</tr>
+
+</table>
+</table>
+ 
+</table>
+<script type="text/javascript">
+
+function Validate()
+{
+  var password =document.getElementById("pass").value;
+  var confirmpassword=document.getElementById("cnfpass").value;
+    if(password != confirmpassword) {
+     alert("Passwords do not match");
+     return false;
+ }
+return true;
+}
+</script>
+</div>
+</body>
+</html>
+
+
